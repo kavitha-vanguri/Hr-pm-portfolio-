@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Blackmont Consulting — Business Development Intern</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14213D;
+    --parchment:#F2EFE9;
+    --brass:#B8863B;
+    --brass-light:#D9B77C;
+    --slate:#4A5568;
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#0c1526;}
+  body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    font-family:'IBM Plex Sans', sans-serif;
+  }
+  .poster{
+    width:1080px;
+    height:1350px;
+    background:var(--parchment);
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+  /* top ink band */
+  .band{
+    background:var(--ink);
+    color:var(--parchment);
+    padding:56px 64px 44px;
+    position:relative;
+  }
+  .wordmark{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.28em;
+    font-size:14px;
+    text-transform:uppercase;
+    color:var(--brass-light);
+    margin-bottom:22px;
+  }
+  .headline{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:76px;
+    line-height:0.98;
+    letter-spacing:-0.01em;
+  }
+  .headline em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--brass-light);
+  }
+  .subhead{
+    margin-top:20px;
+    font-size:19px;
+    color:#C8CEDC;
+    max-width:640px;
+    line-height:1.5;
+  }
+  .band::after{
+    content:"";
+    position:absolute;
+    left:64px; right:64px; bottom:0;
+    height:1px;
+    background:linear-gradient(90deg, var(--brass) 0%, transparent 70%);
+  }
+
+  .body{
+    flex:1;
+    padding:44px 64px 40px;
+    display:flex;
+    flex-direction:column;
+    gap:34px;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--brass);
+    margin-bottom:14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#D8CBB4;
+  }
+
+  /* journey / signature element */
+  .journey{
+    display:flex;
+    justify-content:space-between;
+    position:relative;
+  }
+  .journey::before{
+    content:"";
+    position:absolute;
+    top:17px; left:6%; right:6%;
+    height:2px;
+    background:repeating-linear-gradient(90deg, var(--brass) 0 8px, transparent 8px 14px);
+  }
+  .stop{
+    width:23%;
+    position:relative;
+    z-index:1;
+  }
+  .stop .dot{
+    width:36px; height:36px;
+    border-radius:50%;
+    background:var(--ink);
+    color:var(--brass-light);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:12px;
+    border:2px solid var(--brass);
+  }
+  .stop h4{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:18px;
+    color:var(--ink);
+    margin-bottom:6px;
+  }
+  .stop p{
+    font-size:13.5px;
+    color:var(--slate);
+    line-height:1.45;
+  }
+
+  .two-col{
+    display:flex;
+    gap:48px;
+  }
+  .col{flex:1;}
+  .traits{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .traits span{
+    font-size:14px;
+    padding:8px 16px;
+    border:1px solid var(--brass);
+    border-radius:100px;
+    color:var(--ink);
+    font-weight:500;
+    background:#FBF9F5;
+  }
+  .gains ul{list-style:none;}
+  .gains li{
+    font-size:14.5px;
+    color:var(--slate);
+    padding-left:20px;
+    position:relative;
+    margin-bottom:8px;
+    line-height:1.4;
+  }
+  .gains li::before{
+    content:"—";
+    position:absolute;
+    left:0;
+    color:var(--brass);
+  }
+
+  .footer{
+    margin-top:auto;
+    background:var(--ink);
+    padding:34px 64px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+  }
+  .footer .cta h3{
+    font-family:'Fraunces', serif;
+    font-size:26px;
+    color:var(--parchment);
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  .footer .cta p{
+    font-size:14px;
+    color:#B9C0D2;
+  }
+  .footer .meta{
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--brass-light);
+    line-height:1.8;
+  }
+</style>
+</head>
+<body>
+
+  <div class="poster">
+    <div class="band">
+      <div class="wordmark">Blackmont Consulting</div>
+      <div class="headline">Business<br>Development<br><em>Intern</em></div>
+      <div class="subhead">A hands-on, performance-driven internship. Take ownership from day one, work directly with clients, and gain business skills that hold up in the real world.</div>
+    </div>
+
+    <div class="body">
+      <div>
+        <div class="eyebrow">The Client Journey</div>
+        <div class="journey">
+          <div class="stop">
+            <div class="dot">01</div>
+            <h4>Research</h4>
+            <p>Identify companies that could benefit from Blackmont's services.</p>
+          </div>
+          <div class="stop">
+            <div class="dot">02</div>
+            <h4>Outreach</h4>
+            <p>Reach potential clients by email and follow up professionally.</p>
+          </div>
+          <div class="stop">
+            <div class="dot">03</div>
+            <h4>Proposal</h4>
+            <p>Support proposal prep and guide clients toward a decision.</p>
+          </div>
+          <div class="stop">
+            <div class="dot">04</div>
+            <h4>Close</h4>
+            <p>Track activity and work toward closing at least one project.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="col">
+          <div class="eyebrow">Who We're Looking For</div>
+          <div class="traits">
+            <span>Self-driven</span>
+            <span>Strong communicator</span>
+            <span>Detail-oriented</span>
+            <span>Independent</span>
+            <span>Resilient</span>
+          </div>
+        </div>
+        <div class="col gains">
+          <div class="eyebrow">What You'll Gain</div>
+          <ul>
+            <li>Real-world business development experience</li>
+            <li>Practical, transferable commercial skills</li>
+            <li>A growing professional network</li>
+            <li>Ownership of live client work from week one</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="cta">
+        <h3>Apply now</h3>
+        <p>Send your CV and complete our screening questions to get started.</p>
+      </div>
+      <div class="meta">
+        FULL DETAILS →<br>
+        BUSINESS DEVELOPMENT<br>
+        ROLE OVERVIEW (PDF)
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
