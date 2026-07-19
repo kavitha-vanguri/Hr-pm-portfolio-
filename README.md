@@ -20,4 +20,10 @@ Hi, I'm Kavitha. I'm currently working as an **HR Intern**, building toward a ca
 HR and project management both rely on clear documentation, structured process thinking, and the ability to track work end-to-end. This repo is a working record of that — not a coding portfolio, but a demonstration of how I organise, document, and manage HR and operational work.
 
 ## Contact
-Feel free to reach out via LinkedIn or email regarding roles or collaboration.
+Feel free to reach out via LinkedIn 
+
+https://www.linkedin.com/in/kavitha-vanguri-4aa4a7353?utm_source=share_via&utm_content=profile&utm_medium=member_android
+
+email ID 
+
+vangurikavitha24@gmail.com
